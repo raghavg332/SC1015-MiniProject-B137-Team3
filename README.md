@@ -6,7 +6,7 @@ What is the relationship between personality factors and the likelihood that the
 This project aims to explore the relationship between personality factors and the consumption of three most abused drugs in Singapore; Methamphetamine, Heroin, and Cannabis.
 
 ## Cleaning the Data:
-The dataset used in this project was cleaned to remove a fake drug included in the dataset to filter out non-serious respondents. Additionally, a few classes were clubbed in variables to decrease class imbalance.
+The dataset used in this project was cleaned to remove a fake drug included in the dataset to filter out non-serious respondents. The dataset had normalized values for each variable which we changed to discrete categories. Additionally, a few classes were clubbed in variables to decrease class imbalance.
 
 ## Exploratory Data Analysis (EDA):
 EDA was conducted by plotting the use of the three drugs against all personality types. Chi-squared analysis was used to find associations among all variables concerned.
@@ -20,7 +20,7 @@ Random Forest Classifier was used to predict drug consumption, but the accuracy 
 SVC was used, and it showed good accuracy. The model always predicted "Not a user" for all data initially, but L2 regularisation was used to counter that, which resulted in an accuracy of around 80%. Principal Component Analysis (PCA) was used to visualise the results.
 
 ## Neural Network:
-A neural network was constructed with two hidden layers of six and four nodes, respectively. This model showed a high accuracy of 93%.
+A neural network was constructed with two hidden layers of six and four nodes, respectively. This model showed a high accuracy of 93% with an epoch of 10 and a batch size of 300 in order to prevent over and under-fitting.
 
 ## Conclusion:
 This project explored the relationship between personality factors and drug consumption using three different models. SVC and Neural Network showed promising results. However, due to the nature of drug consumption data, the models' accuracy was affected by class imbalance. Nonetheless, the results obtained from this project could be used to further investigate the relationship between personality factors and drug consumption.
